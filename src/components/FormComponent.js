@@ -9,18 +9,14 @@ class FormComponent extends Component {
     }
 
     createMessage = () => {
-        const { addMessage, userName, length } = this.props
+        const { addMessage, username, length } = this.props
 
         const message = {
-            userName,
+            username,
             message: this.state.message
         }
 
-        console.log('message')
-        console.log(message)
-
         addMessage(message)
-
         this.setState({ message: '', length })
     }
 
@@ -32,7 +28,6 @@ class FormComponent extends Component {
     handleChange = event => {
         const message = event.target.value
         const length = this.props.length - message.length
-
         this.setState({ message, length })
     }
 
@@ -41,7 +36,6 @@ class FormComponent extends Component {
             this.createMessage()
         }
     }
-
 
     render() {
         return (
@@ -54,7 +48,7 @@ class FormComponent extends Component {
                     maxLength={this.props.length} />
 
                 <div className='info'>
-                    {this.props.length}
+                    {this.state.length}
                 </div>
                 <button
                     type="submit">
