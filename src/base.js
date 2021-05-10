@@ -6,13 +6,13 @@ import firebase from 'firebase/app'
 import 'firebase/database'
 
 let firebaseConfig = {
-    apiKey: "AIzaSyD_wOs_GulO5xc758smzFPIG4etL4kd3xE",
-    authDomain: "reactjs-chatbox-app.firebaseapp.com",
-    databaseURL: "https://reactjs-chatbox-app-default-rtdb.firebaseio.com",
-    projectId: "reactjs-chatbox-app",
-    storageBucket: "reactjs-chatbox-app.appspot.com",
-    messagingSenderId: "151858326057",
-    appId: "1:151858326057:web:48acaff2329d63e4568a38"
+    apiKey: "AIzaSyCoxgwcBcQxV24Fbih0SCQUCFTzbwIJtjA",
+    authDomain: "react-js-udemy-chatbox.firebaseapp.com",
+    databaseURL: "https://react-js-udemy-chatbox-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "react-js-udemy-chatbox",
+    storageBucket: "react-js-udemy-chatbox.appspot.com",
+    messagingSenderId: "580585215867",
+    appId: "1:580585215867:web:6443f3242e3c4e92f2cfde"
 };
 
 // Initialize Firebase
